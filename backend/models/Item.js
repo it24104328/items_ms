@@ -32,6 +32,13 @@ const itemSchema = new mongoose.Schema(
       type: Date,
       required: [true, "Expiry date is required"],
      },
+
+    serialNumber: {
+      type: String,
+      default: "",
+      trim: true,
+    },
+    
   },
   { timestamps: true }
 );

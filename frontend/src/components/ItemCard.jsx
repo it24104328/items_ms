@@ -12,6 +12,7 @@ function ItemCard({ item, onDelete }) {
       <p><strong>Category:</strong> {item.category}</p>
       <p><strong>Price:</strong> ${item.price}</p>
       <p><strong>Expiry Date:</strong> {item.expiryDate ? new Date(item.expiryDate).toLocaleDateString() : "N/A"}</p>
+      <p><strong>Serial Number:</strong> {item.serialNumber || "N/A"}</p> 
       <p>{item.description}</p>
 
       <div className="card-actions">

@@ -58,6 +58,8 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
        <label>Expiry Date</label>
       <input name="expiryDate" type="date" value={formData.expiryDate} onChange={handleChange} />
 
+      <label>Serial Number</label>
+      <input name="serialNumber" value={formData.serialNumber} onChange={handleChange} />
 
       <button className="btn primary" type="submit">{submitText}</button>
     </form>
